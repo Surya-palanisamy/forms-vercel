@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.cdnfonts.com/css/blanka");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 body,
 html {
@@ -11,7 +9,7 @@ html {
   width: 100%;
 }
 body {
-  background-color: #000000;
+  background-color: #d8cece;
   color: #eeeeee;
   position: relative;
 }
@@ -65,6 +63,12 @@ input[type="number"] {
   border-radius: 25px;
   transition: all 0.3s ease;
   font-size: 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bdc3c7;
+  border-radius: 0;
+  color: #eeeeee;
+  padding: 8px 0;
 }
 select {
   padding: 12px;
@@ -74,6 +78,12 @@ select {
   transition: all 0.3s ease;
   font-size: 16px;
   width: 95%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bdc3c7;
+  border-radius: 0;
+  color: #eeeeee;
+  padding: 8px 0;
 }
 input[type="text"]:focus,
 input[type="tel"]:focus,
@@ -83,6 +93,12 @@ select:focus {
   border-color: #d8cb0e;
   box-shadow: 0 0 5px rgba(28, 55, 206, 0.5);
   outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bdc3c7;
+  border-radius: 0;
+  color: #eeeeee;
+  padding: 8px 0;
 }
 button {
   display: block;
@@ -148,6 +164,12 @@ button:hover {
   button {
     font-size: 14px;
     padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #bdc3c7;
+    border-radius: 0;
+    color: #eeeeee;
+    padding: 8px 0;
   }
 }
 .error-message {
@@ -213,5 +235,3 @@ fieldset select:focus {
 fieldset label {
   color: #ffd700;
 }
-
-/* ... (rest of the CSS remains unchanged) ... */
