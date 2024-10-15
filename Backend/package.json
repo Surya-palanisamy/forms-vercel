@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node api/index.js"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "express-validator": "^7.2.0",
     "mongodb": "^6.9.0",
-    "mongoose": "^8.7.1",
-    "zcatalyst-sdk-node": "^2.5.1"
+    "mongoose": "^8.7.1"
   }
 }
