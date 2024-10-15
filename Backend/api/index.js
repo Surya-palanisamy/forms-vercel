@@ -5,12 +5,8 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-
-// Middleware
 app.use(bodyParser.json());
 app.use(cors());
-
-// MongoDB Atlas connection
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -42,7 +38,7 @@ const teamSchema = new mongoose.Schema({
 const Team = mongoose.model("Team", teamSchema);
 
 // API Routes
-app.post("/api/submit-team", async (req, res) => {
+app.post("/submit-team", async (req, res) => {
   try {
     const newTeam = new Team(req.body);
     await newTeam.save();
@@ -53,9 +49,11 @@ app.post("/api/submit-team", async (req, res) => {
   }
 });
 
-app.get("/api/health", (req, res) => {
+app.get("/health", (req, res) => {
   res.status(200).json({ status: "healthy" });
 });
+const port = process.env.PORT || 3000;
 
-// Export the Express API
-module.exports = app;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
