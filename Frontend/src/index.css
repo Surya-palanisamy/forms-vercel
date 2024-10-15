@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.cdnfonts.com/css/blanka");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 100%;
+}
+body {
+  background-color: #000000;
+  color: #eeeeee;
+  position: relative;
+}
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(229, 220, 220, 0);
+  font-family: "Josefin Sans", "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.content {
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: rgba(20, 20, 15, 0.7);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px #ffd000;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeIn 2s ease-in-out;
+}
+h1 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #ffa600;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+  width: 96%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  width: 95%;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #d8cb0e;
+  box-shadow: 0 0 5px rgba(28, 55, 206, 0.5);
+  outline: none;
+}
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} /* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .content {
+    padding: 20px 10px;
+  }
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+.error-message {
+  color: red;
+  font-size: large;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+#loadingMessage {
+  display: none;
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+input::placeholder {
+  color: #000000a6;
+}
+#second {
+  padding-top: 10px;
+  padding-left: 5px;
+}
+#teamMembers fieldset {
+  border: none;
+  margin: 0;
+  padding: 10px;
+}
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+legend {
+  color: #ffa600;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+fieldset input[type="text"],
+fieldset input[type="tel"],
+fieldset input[type="email"],
+fieldset select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bdc3c7;
+  border-radius: 0;
+  color: #eeeeee;
+  padding: 8px 0;
+}
+
+fieldset input[type="text"]:focus,
+fieldset input[type="tel"]:focus,
+fieldset input[type="email"]:focus,
+fieldset select:focus {
+  border-bottom-color: #d8cb0e;
+  box-shadow: none;
+}
+
+fieldset label {
+  color: #ffd700;
+}
+
+/* ... (rest of the CSS remains unchanged) ... */
