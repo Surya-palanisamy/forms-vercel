@@ -8,10 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 mongoose
-  .connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("MongoDB Atlas connected"))
   .catch((err) => console.log("MongoDB connection error:", err));
 
