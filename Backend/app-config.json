@@ -1,8 +1,0 @@
-{
-  "command": "npm start",
-  "build_path": "/home/surya/Documents/react-tailwind-css/Mern-form/Backend",
-  "stack": "node18",
-  "env_variables": {},
-  "memory": 256,
-  "scripts": {}
-}
