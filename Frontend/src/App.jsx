@@ -93,7 +93,7 @@ const TeamSubmissionForm = () => {
     if (validateForm()) {
       try {
         const response = await axios.post(
-          "https://forms-backend-api.vercel.app/api/submit-team",
+          "https://forms-backend-api.vercel.app/submit-team",
           formData
         );
         if (response.status === 200) {
